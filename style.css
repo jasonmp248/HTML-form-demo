@@ -1,0 +1,11 @@
+ header {
+    background: url(https://assets3.thrillist.com/v1/image/1782598/1200x600/scale;) no-repeat center center; 
+    background-size: cover;
+    height: 800px;
+    text-align: center; 
+  }
+
+  h1 {
+      color: white;
+      
+  }
