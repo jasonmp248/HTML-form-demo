@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Taco Chuki's Taco Request Form</title>
+    </head>
+    <body>
+        <form action="submission.html" method="POST">
+            <H1>Create Your Taco at Taco Chuki's!</H1>
+                <section class="taco-type">
+                    <label for="meat">What type of meat would you like?</label>
+                    <input type="text" id="meat" name="meat">
+                </section>
+                <br>
+
+                <section class="taco-quantity">
+                    <label for="amount">How many tacos would you like?</label>
+                    <input type="text" id="amount" name="amount">
+                </section>
+                <br>
+
+                <section class="taco-spicyness">
+                    <label for="spice-level">What level of spiciness?</label>
+                    <br>
+                    <span>Level 1</span>
+                    <input type="range" id="spice-level" name="spice-level" min="0" max="5" step="0.5">
+                    <span>Level 5</span>
+                </section>
+                <br>
+
+                <section class="toppings">
+                    <span>What toppings would you like?</span>
+                    <br>
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" id="lettuce" value="lettuce" name="toppings">
+                    <br>
+                    <label for="jalapeno">Jalapeno</label>
+                    <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno">
+                    <br>
+                    <label for="guacamole">Guacamole</label>
+                    <input type="checkbox" id="guacamole" name="toppings" value="guacamole"> 
+                </section>
+                <br><br>
+
+                <section class="saucey">
+                    <span>Sauce on the side?</span>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="Yes" name="yes" value="Yes"> 
+                    <label for="no">No</label>
+                    <input type="radio" id="no" value="no" name="yes">
+                </section>
+                <br><br>
+
+                <section class="tortilla-type">
+                    <label for="tortilla">What type of tortilla would you like?</label>
+                    <select id="tortilla" name="tortilla">
+                        <option value="White Flour">White Flour</option>
+                        <option value="Wheat">Whole Wheat</option>
+                        <option value="Mixed">Mixed</option>
+                    </select>
+                </section>
+
+                <section class="hot-sauce">
+                    <label for="sauce">What type of hot sauce would you like?</label>
+                    <input list="sauce-types" id="sauce" name="sauce">
+
+                    <datalist id="sauce-types">
+                        <option value="Mild"></option>
+                        <option value="Medium"></option>
+                        <option value="Caliente"></option>
+                    </datalist>
+                </section>
+                <br><br>
+
+                <section class="additional-info">
+                    <label for="info">Any additional instructions?</label>
+                    <br>
+                    <textarea id="info" name="info" rows="5" cols="40"></textarea>
+                </section>
+
+                <section class="submit">
+                    <input type="submit" value="Submit">
+                </section>
+        </form>
+    </body>
+</html>
