@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taco Chuki's - Seattle</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Taco Chuki's</h1>
+            <nav>
+                <ul>
+                    <li><a href=#about-us>About Us</a></li>
+                    <li><a href=#place-order>Place an Order</a></li>
+                    <li><a href=#contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about-us">
+                <article>
+                    <h2>About Us</h2>
+                        <p>No-frills pick for counter-serve Mexican street food, including tacos, quesadillas & burritos.<br>
+                           Taco Chukis is available in 4 locations in Seattle.</p>
+                </article>
+            </section>
+
+            <section id="place-order">
+                <article>
+                    <h2>Place an Order</h2>  
+                        <form action="submission.html" method="POST">
+                            <section class="taco-type">
+                                <label for="meat">What type of meat would you like?</label>
+                                <input type="text" id="meat" name="meat" required>
+                            </section>
+                            <br>
+            
+                            <section class="taco-quantity">
+                                <label for="amount">How many tacos would you like?</label>
+                                <input type="number" id="amount" name="amount" min="1" max="100" required>
+                            </section>
+                            <br>
+            
+                            <section class="taco-spicyness">
+                                <label for="spice-level">What level of spiciness?</label>
+                                <br>
+                                <span>Level 1</span>
+                                <input type="range" id="spice-level" name="spice-level" min="0" max="5" step="0.5">
+                                <span>Level 5</span>
+                            </section>
+                            <br>
+            
+                            <section class="toppings">
+                                <span>What toppings would you like?</span>
+                                <br>
+                                <label for="lettuce">Lettuce</label>
+                                <input type="checkbox" id="lettuce" value="lettuce" name="toppings">
+                                <br>
+                                <label for="jalapeno">Jalapeno</label>
+                                <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno">
+                                <br>
+                                <label for="guacamole">Guacamole</label>
+                                <input type="checkbox" id="guacamole" name="toppings" value="guacamole"> 
+                            </section>
+                            <br><br>
+            
+                            <section class="saucey">
+                                <span>Sauce on the side?</span>
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="Yes" name="yes" value="Yes"> 
+                                <label for="no">No</label>
+                                <input type="radio" id="no" value="no" name="yes">
+                            </section>
+                            <br><br>
+            
+                            <section class="tortilla-type">
+                                <label for="tortilla">What type of tortilla would you like?</label>
+                                <select id="tortilla" name="tortilla">
+                                    <option value="White Flour">White Flour</option>
+                                    <option value="Wheat">Whole Wheat</option>
+                                    <option value="Mixed">Mixed</option>
+                                </select>
+                            </section>
+            
+                            <section class="hot-sauce">
+                                <label for="sauce">What type of hot sauce would you like?</label>
+                                <input list="sauce-types" id="sauce" name="sauce">
+            
+                                <datalist id="sauce-types">
+                                    <option value="Mild"></option>
+                                    <option value="Medium"></option>
+                                    <option value="Caliente"></option>
+                                </datalist>
+                            </section>
+                            <br><br>
+            
+                            <section class="additional-info">
+                                <label for="info">Any additional instructions? (250 maximum characters)</label>
+                                <br>
+                                <textarea id="info" name="info" rows="5" cols="40" minlength="0" maxlength="250"></textarea>
+                            </section>
+            
+                            <section class="submit">
+                                <input type="submit" value="Submit">
+                            </section>
+                        </form>
+                </article>
+            </section>
+
+            <section id="contact">
+                <article>
+                    <h2>Contact Us</h2>
+                        <p>425-123-456</p>
+                    <section class="first-last-name">
+                        <textarea id="name" name="name" rows="1" cols="50" placeholder="First and last name"></textarea>
+                    </section>
+                    <section class="phone-number">
+                        <textarea id="phone-number" name="phone" rows="1" cols="50" placeholder="Phone number"></textarea>
+                    </section>
+                    <section class="contact-additional-info">
+                        <textarea id="contact-additional-info" name="contact-info" rows="5" cols="40" placeholder="Any additional information?"></textarea>   
+                    </section>
+                    <section class="submit">
+                        <input type="submit" value="Submit">
+                    </section>
+                </article>
+            </section>
+        </main>
+
+
+
+    </body>
+</html>
